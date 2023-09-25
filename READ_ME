@@ -1,0 +1,16 @@
+The Objective of the project is to implement a version of two-pass SIC/XE assembler: Pass 1 and Pass 2. 
+The Assembler we implemented includes all the SIC/XE instructions and supports all four formats 1, 2, 3, 4 and 2 special formats also. addressing modes and program relocation.
+It also supports all the machine independent features-
+Literals
+Symbol Defining Statements
+Expressions
+Program Blocks
+Control Sections and Program Linking
+Input to assembler- Assembler source program using the instruction set of SIC/XE. Output- Assembler will generate the following files as output-
+
+Pass 1 will generate a Symbol Table.
+Pass 1 will also generate Intermediate File for the Pass 2.
+Pass 2 will generate a listing file containing the input assembly code and address, block number, object code of each instruction.
+Pass 2 will also generate an object program including following type of record: H, D, R, T, M and E types.
+An error msg is also generated displaying the errors in the assembly program (if any).
+A file including symbol table,literal table and table for External definition and External reference is also generated.
